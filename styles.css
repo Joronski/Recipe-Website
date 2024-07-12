@@ -1,0 +1,106 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #179c52;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+    color: #e7e7e7;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #179c52; 
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e7e7e7;
+    font-weight: bold;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.recipe-card {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.recipe-info {
+    background-color: #e7e7e7;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #179c52;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design Implementation */
+@media only screen and (max-width: 768px) {
+    main {
+        justify-content: center;
+    }
+
+    .recipe-card {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul li {
+        display: inline;
+        margin-bottom: 10px;
+    }
+}
